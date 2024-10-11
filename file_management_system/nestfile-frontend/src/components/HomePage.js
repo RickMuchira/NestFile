@@ -74,8 +74,7 @@ const HomePage = () => {
           <li className="text-white font-bold text-xl">File Explorer</li>
           <ul className="flex space-x-4">
             <li><Link to="/" className="text-white hover:text-blue-300">Home</Link></li>
-            <li><Link to="/upload" className="text-white hover:text-blue-300">Upload</Link></li>
-            <li><Link to="/settings" className="text-white hover:text-blue-300">Settings</Link></li>
+    
           </ul>
         </ul>
       </nav>
