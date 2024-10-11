@@ -126,19 +126,77 @@ __file_management_system/
 Move into the newly created React application directory: **cd nestfile-frontend**
 
 ## Step 5: Install TailwindCSS and its Dependencies
+Install TailwindCSS along with its necessary dependencies:
+**npm install -D tailwindcss postcss autoprefixer**
+
+## Initialize TailwindCSS:
+Create the tailwind.config.js file by running:
+
+__npx tailwindcss init__
+
+This command creates a tailwind.config.js file in your project's root directory. This file is used to configure Tailwind’s settings.
+
+## Configure tailwind.config.js 
+*1. Open the **tailwind.config.js** File:*
+
+Open *tailwind.config.js* in your preferred code editor (e.g., VS Code, Sublime Text).
+
+*2. Update the content Section:*
+
+Modify the content section to include paths for all JavaScript and TypeScript files in the src directory. Update the file to look like this:
+
+// tailwind.config.js
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+This configuration ensures that TailwindCSS scans all files in the src directory for any Tailwind classes you use.
+
+*Step 3: Add TailwindCSS Directives to Your CSS*
+
+1. Open the src/index.css File:
+
+Open the src/index.css file in your nestfile-frontend directory.
+
+2. Replace Existing Code with Tailwind Directives:
+
+Delete any existing code in src/index.css and replace it with the following TailwindCSS directives:
+
+__/* src/index.css */__
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+**NB:**
+__Unknown at rule @tailwind__
+To fix this go and install __post css language support extension__ on you code editor
+
+## Step 6. Implement Routing for Directory Navigation
+Step 1: Install react-router-dom
+react-router-dom is the library that helps manage routing in React applications, allowing you to define different routes (URLs) and render corresponding components based on the current URL.
+
+ **a**.Navigate to the nestfile-frontend Directory:
+e.g __cd ~/Downloads/NestFile/file_management_system/nestfile-frontend__
+
+ **b**.Install react-router-dom:
+ Run the following command to install the package:
+
+__npm install react-router-dom__
 
 
-## Step 5: Start the React Development Server
+## Step 7: Start the React Development Server
 Now, start the React development server:
 
 __npm start__
 
 The development server will start, and you can access your React app at http://localhost:3000 by default. You should see the default React landing page, indicating that your React application is set up correctly.
-## Step 5: Install TailwindCSS and its Dependencies
 
-Navigate to the React Project Directory:
-
-Make sure you're inside the __nestfile-frontend__ directory:
 
 
 
