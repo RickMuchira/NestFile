@@ -6,7 +6,7 @@ NestFile is a powerful and flexible file management system that enables users to
 - **Create and Manage Nested Directories**:Organize your files within a hierarchical directory structure.
 - **File Operations**: Upload, rename, and delete files .
 - **Visual Navigation:**: User interface that displays directories and files with icons for easy identification.
-- **RESTful API:*: Built using Django REST Framework, the API supports CRUD operations for directories and files.
+- **RESTful API:**: Built using Django REST Framework, the API supports CRUD operations for directories and files.
 
 ##  Project Architecture
 The backend is built using Django and the Django REST Framework to handle the API endpoints. The frontend uses React with TailwindCSS for a modern, responsive UI.
